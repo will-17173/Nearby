@@ -3,18 +3,101 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>hello world</title>
-    <script type="text/javascript">
-    	function helloworld(){
-			alert("hello world!")
-		}
-   		document.addEventListener('plusready', function(){
-   			alert("welcome to Html5plus!");
-   		});
-   		
-    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>附近</title>
+	<link type="text/css" rel="stylesheet" href="css/ratchet.css">
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/ratchet.js"></script>
 </head>
 <body>
-	This is a show “helloworld” default page,your can click this button <button onclick="helloworld()">click me!</button> to show a "hello world" message!
+<div class="header bar bar-nav">
+	<h1 class="title">附近</h1>
+    <a class="fj-btn-right cart-btn" id="btn_cart" href="buy_cart.html"><span>0</span></a>
+</div>
+<div class="footer bar bar-footer">
+	<ul>
+    	<li class="current"><a href="index.html">主页</a></li>
+        <li><a href="buy_shops.html">附近</a></li>
+        <li><a href="buy_cart.html">购物车</a></li>
+        <li><a href="settings.html">设置</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div>
+    	<div class="con">
+	 		<div class="search">
+	         <form id="search_form">
+	                <input type="text"placeholder="搜索商品" id="search_input">
+	                <button id="btn_search" type="submit"></button>
+	            </form>
+	        </div>
+
+			<div class="slider" id="slider">
+			  <div class="slide-group">
+
+			    <div class="slide">
+					<a href="#">
+                        <span class="avatar-box"><img class="pure-img" src="images/1.jpg" class="avatar"></span>
+                    </a>
+			    </div>
+			    <div class="slide">
+					<a href="#">
+                        <span class="avatar-box"><img class="pure-img" src="images/1.jpg" class="avatar"></span>
+                    </a>
+			    </div>
+			    <div class="slide">
+					<a href="#">
+                        <span class="avatar-box"><img class="pure-img" src="images/1.jpg" class="avatar"></span>
+                    </a>
+			    </div>
+			    <div class="slide">
+					<a href="#">
+                        <span class="avatar-box"><img class="pure-img" src="images/1.jpg" class="avatar"></span>
+                    </a>
+			    </div>
+
+			  </div>
+			</div>
+
+	        <div class="categories">
+	        	<ul class="clearfix">
+	            	<li><a href="#"></a></li>
+	                <li><a href="#"></a></li>
+	                <li><a href="#"></a></li>
+	                <li><a href="#"></a></li>
+	            </ul>
+	        </div>   		
+    	</div>
+
+    </div>
+
+
+</div>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		$('[data-href]').click(function(){
+			var href = $(this).data('href');
+			var w = plus.webview.create(href);
+			w.show('slide-in-right')
+		})
+
+
+		// alert("welcome to Html5plus!");
+	});
+
+	$('#slider').on('slide', function(e){
+		// console.log($('.slide-group').css('transform'))
+		// console.log($('.slide-group').attr('style'))
+	})
+
+
+
+
+
+</script>
 </body>
 </html>

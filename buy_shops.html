@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>附近的商店</title>
+<link type="text/css" rel="stylesheet" href="css/ratchet.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/ratchet.js"></script>
+<script type="text/javascript">
+    document.addEventListener('plusready', function(){
+      // plus.nativeUI.confirm('加载中...', {"width": "200px", "background": "rgba(0,0,0,.5)"})
+
+      $('[data-href]').click(function(e){
+        // e.preventDefault();
+        var href = $(this).data('href');
+        var w = plus.webview.create( href, 'view' );
+        w.show('zoom-fade-out');
+
+        // plus.webview.open(href, 'view', {}, 'zoom-fade-out');
+      })
+        // alert("welcome to Html5plus!");
+    });
+</script>
+</head>
+
+<body>
+
+<div class="header bar bar-nav">
+    <button class="btn pull-left">返回</button>
+    <h1 class="title">附近的商店</h1>
+    <a class="fj-btn-right cart-btn" href="buy_cart.html" id="cart"><span>0</span></a>
+</div>
+
+<div class="footer bar bar-footer">
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li class="current"><a href="buy_shops.html">附近</a></li>
+        <li><a href="buy_cart.html">购物车</a></li>
+        <li><a href="settings.html">我的</a></li>
+    </ul>
+</div>
+<div class="content">
+
+<div id="page_shops">
+
+    <div class="pt0">
+
+        <div class="location-tip clearfix" >
+            <a href="#" class="fr"></a><span>暂时不能获取您的位置，点击此处在地图上选择</span>
+        </div>
+
+        <div class="pt10">
+        	<ul id="user_search" class="table-view">
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">1公里</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">1.5公里</div>
+                        舒缓的成人用品店用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>                  
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>                  
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" data-href="buy_search.html" href="javascript:;">
+                      <img class="media-object pull-left" width="66" height="66" src="http://placehold.it/66x66">
+                      <div class="media-body">
+                        <div class="dist badge">300米</div>
+                        舒缓的成人用品店
+                        <p>
+                            起送金额：30元<br>
+                            配送时间：30分钟
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+            </ul>
+            <div class="pagination tc pb20 hidden">
+            	<a class="prev button button-rounded button-small" href="javascript:;">上一页</a>
+                &nbsp;
+                <select class="page-sel">
+                </select>
+                &nbsp;
+                <a class="next button button-rounded button-small" href="javascript:;">下一页</a>
+            </div>
+            
+          
+        </div>
+    </div>
+</div>
+
+    <div id="page_address" style="display:none;">
+        <div data-role="header" data-position="fixed" class="header">
+            <h1>选择地址</h1>
+            <a href="javascript:;" class="btn btn-toolbar btn-toolbar-left"><span class="btn-inner">返回</span></a>
+            <a href="javascript:;" class="btn btn-toolbar btn-toolbar-right" id="use_current_location"><span class="btn-inner">定位</span></a>
+        </div>
+        <div data-role="content" class="pt0">
+            <div id="bdmap_container"></div>
+        </div>
+        <div id="position_footer">
+            <div class="con">
+                <input type="text" class="f-address">
+                <a href="javascript:;" id="position_ok" class="button button-block button-rounded button-highlight">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/template" id="tmpl_shops">
+
+	{{ for(var i = 0; i < it.length; i++){ }}
+    {{ 
+        var commit = it[i].commitment.split(':'),
+            str = '';
+        if(commit[0] != 0){str += commit[0] + '天';}
+        if(commit[1] != 0){str += commit[1] + '小时';}
+        if(commit[2] != 0){str += commit[2] + '分钟';}
+    }}
+	<li>
+		<div class="item-in">
+			<div class="item-thumb"><a href="buy_search.html?sid={{=it[i].sid}}"><img src="{{=it[i].picture}}"></a></div>
+			<div class="item-info"><div class="fr">{{=it[i].distance}}米</div><a href="buy_search.html?sid={{=it[i].sid}}">{{=it[i].name}}</a><div class="fs12">起送金额:{{=it[i].limit}}</div>
+			<div class="item-seller">配送时间: {{=str}}</div >
+		</div>
+		</div>
+	</li>
+	{{ } }}
+</script>
+<!-- <script src="assets/js/buy_shops.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta charset="utf-8">
+<title>商品详情</title>
+<link type="text/css" rel="stylesheet" href="css/ratchet.css">
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/ratchet.js"></script>
+<script type="text/javascript">
+    document.addEventListener('plusready', function(){
+        // alert("welcome to Html5plus!");
+    });
+</script>
+</head>
+
+<body>
+<div class="header bar bar-nav">
+    <button class="btn pull-left">返回</button>
+    <h1 class="title">商品详情</h1>
+    <a class="fj-btn-right cart-btn" href="buy_cart.html" id="cart"><span>0</span></a>
+</div>
+<div class="footer bar bar-footer">
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li class="current"><a href="buy_shops.html">附近</a></li>
+        <li><a href="buy_cart.html">购物车</a></li>
+        <li><a href="settings.html">我的</a></li>
+    </ul>
+</div>
+<div class="content">
+        <div class="item-detail ">
+            <div class="item-detail-con">
+                <div class="item-images" id="slide_photo">
+                    <div class="gallery">
+                        <div class="swiper-container"  id="pic_wrap">
+                            <ul class="swiper-wrapper">
+                                <li><img src="http://placehold.it/300x200"></li>
+                            </ul>     
+                        </div>
+                    </div>             
+                </div>
+                <div class="con">
+                    <div class="item-name pt10" id="goods_name">
+                        充气娃娃韩红版
+                    </div>
+                    <div class="price-and-buy clearfix pt10 pb10">
+                        <div class="fr">
+                            <input type="number" id="item_num" value="1" min="1">
+                            <button class="btn btn-negative pull-right">购买</button>
+                        </div>
+                        <span class="price" id="goods_price"></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="item-desc simp-box pt10 pb10">
+                <div class="simp-box-in">
+                    <div class="simp-box-title pb5">商品描述：</div>
+                    <div class="simp-box-con" id="goods_intro">
+                    
+                    </div>
+                    <div class="simp-box-title pb5">商家：<span id="shop_name"></span></div>  
+                    <div class="simp-box-title pb5">库存：<span id="goods_amount"></span></div>                
+                </div>
+            </div>
+            
+            <!--div class="item-detail-con">
+                <div class="recommendation pt10 pb10">
+                    <div class="rec-title pb5">其它推荐</div>
+                    <div class="pt10">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img"><img src="assets/images/3.jpg" width="90" height="90"></div>
+                                    <div class="name">谜岛MeeDoo 海臀公主2代 成人用</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img"><img src="assets/images/3.jpg" width="90" height="90"></div>
+                                    <div class="name">谜岛MeeDoo 海臀公主2代 成人用</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="img"><img src="assets/images/3.jpg" width="90" height="90"></div>
+                                    <div class="name">谜岛MeeDoo 海臀公主2代 成人用</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div-->
+            
+            
+        </div>
+</div>
+
+<script src="assets/js/buy_goods.js"></script>
+</body>
+</html>

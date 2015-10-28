@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta charset="utf-8">
+<title>商品列表</title>
+<link type="text/css" rel="stylesheet" href="css/ratchet.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/ratchet.js"></script>
+<script type="text/javascript">
+    document.addEventListener('plusready', function(){
+        // alert("welcome to Html5plus!");
+    });
+</script>
+</head>
+
+<body>
+<div class="header bar bar-nav">
+    <button class="btn pull-left">返回</button>
+    <h1 class="title">商品列表</h1>
+    <a class="fj-btn-right cart-btn" href="buy_cart.html" id="cart"><span>0</span></a>
+</div>
+<div class="footer bar bar-footer">
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li class="current"><a href="buy_shops.html">附近</a></li>
+        <li><a href="buy_cart.html">购物车</a></li>
+        <li><a href="settings.html">我的</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="filters">
+        <ul id="filters">
+            <li class="desc current" data-type="sales"><a href="#" class="ui-link"><span>销量</span></a></li>
+            <li class="asc" data-type="price"><a href="#" class="ui-link"><span>价格</span></a></li>
+            <li class="desc" data-type="distance"><a href="#" class="ui-link"><span>距离</span></a></li>
+            <li class="desc" data-type="time"><a href="#" class="ui-link"><span>最新</span></a></li>
+        </ul>
+    </div>  
+    <div class="location-tip clearfix" >
+        <a href="#" class="fr"></a><span>暂时不能获取您的位置，点击此处在地图上选择</span>
+    </div>
+    <div class="item-list pt10">
+        <ul id="user_search">
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>
+        <li><div class="item-in"><div class="item-thumb"><a href="buy_goods.html?gid=11111"><img src="http://placehold.it/66x66"></a></div><div class="item-info"><a href="buy_goods.html?gid=11111">充气娃娃韩红版</a><div class="item-price">&yen;250</div ><div class="item-seller">商家: 舒缓成人旗舰店</div ></div><a class="buy" href="#" data-gid="11111"></a></div></li>        
+            </ul>
+    </div>
+</div>
+
+<!-- <div id="page_address">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+        <h1>选择地址</h1>
+        <a href="javascript:;" class="btn btn-toolbar btn-toolbar-left" data-role="none" data-rel="back"><span class="btn-inner">返回</span></a>
+        <a href="javascript:;" class="btn btn-toolbar btn-toolbar-right" id="use_current_location" data-role="none"><span class="btn-inner">定位</span></a>
+    </div>
+    <div data-role="content" class="pt0">
+        <div id="bdmap_container"></div>
+    </div>
+    <div id="position_footer">
+        <div class="con">
+            <input type="text" data-role="none" class="f-address">
+            <a href="javascript:;" id="position_ok" class="button button-block button-rounded button-highlight">确定</a>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <script src="assets/js/buy_search.js"></script> -->
+</body>
+</html>

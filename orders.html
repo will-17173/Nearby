@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>订单列表</title>
+<link type="text/css" rel="stylesheet" href="css/ratchet.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/ratchet.js"></script>
+<script type="text/javascript">
+    document.addEventListener('plusready', function(){
+        // alert("welcome to Html5plus!");
+    });
+</script>
+</head>
+
+<body>
+<div class="header bar bar-nav">
+    <button class="btn pull-left">返回</button>
+    <h1 class="title">我的订单</h1>
+    <span class="icon icon-search pull-right"></span>
+    <!-- <a class="fj-btn-right cart-btn" href="javascript:;"></a> -->
+</div>
+<div class="footer bar bar-footer">
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="buy_shops.html">附近</a></li>
+        <li><a href="buy_cart.html">购物车</a></li>
+        <li class="current"><a href="settings.html">我的</a></li>
+    </ul>
+</div>
+    <div class="content">
+      <div class="order-search">
+        <ul class="clearfix">
+            <li class="current"><a href="javascript:;" data-code="">全部</a></li>
+            <li><a href="javascript:;" data-code="">未处理</a></li>
+            <li><a href="javascript:;" data-code="">进行中</a></li>
+            <li><a href="javascript:;" data-code="">已完成</a></li>
+            <li><a href="javascript:;" data-code="">已关闭</a></li>
+        </ul>
+
+        <div class="con">
+<!--           <select>
+            <option value="">订单状态</option>
+            <option value="0">未处理</option>
+            <option value="1">已付款</option>
+            <option value="2">正在配送</option>
+            <option value="3">交易成功</option>
+            <option value="4">交易关闭</option>
+            <option value="5">系统关闭</option>
+          </select>   -->  
+<!--           <input type="search" placeholder="Search">
+          <a href="javascript:;" class="btn btn-primary" id="order_search_submit">搜索</a> -->
+        </div>
+
+    </div>
+
+    <div class="orders pt10">
+        <ul id="order_wrap">
+            <li class="order-li" data-order="22222">
+                <div class="order-in">
+                    <div class="t">
+                        <div class="order-status completed">进行中</div>
+                        舒缓成人专门店 <span class="icon icon-right-nav fs14"></span>
+                    </div>
+                    <div class="c clearfix">
+                        <div class="order-thumb"><a href="#modal" data-order-number="22222"><img src="http://placehold.it/66x66"></a></div>
+                        <div class="order-info">
+                            <a href="#modal" data-order-number="23234234">充气妹妹韩红版</a>
+                            <div class="order-sum">&yen;55</div >
+                            <div class="order-total">共5件</div >
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="order-li" data-order="22222">
+                <div class="order-in">
+                    <div class="t">
+                        <div class="order-status completed">进行中</div>
+                        舒缓成人专门店 <span class="icon icon-right-nav fs14"></span>
+                    </div>
+                    <div class="c clearfix">
+                        <div class="order-thumb"><a href="#modal" data-order-number="22222"><img src="http://placehold.it/66x66"></a></div>
+                        <div class="order-info">
+                            <a href="#modal" data-order-number="23234234">充气妹妹韩红版</a>
+                            <div class="order-sum">&yen;55</div >
+                            <div class="order-total">共5件</div >
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div id="modal" class="modal">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#modal"></a>
+            <h1 class="title">订单详情</h1>
+          </header> 
+        <div class="content">
+        <div class="simp-box order-detail">
+            <div class="con">
+                <div class="simp-box-con order-li pt10">
+                    <div class="t"></div>
+                    <ul>
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li> 
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li> 
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li> 
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li> 
+                    <li class="clearfix">
+                        <div class="item-thumb">
+                            <img src="http://placehold.it/66x66">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-name">充气妹妹</p>
+                            <p class="price"><span>x1</span>&yen;333</p>
+                        </div>
+                    </li> 
+
+
+                    </ul>
+                    <div class="buyer-info">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="con pt10 fs14 order-total">
+            <p class="fr">
+                <button id="cancel_order" class="button button-small button-rounded button-highlight">取消订单</button>
+                <button id="delete_order" class="button button-small button-rounded button-highlight">删除订单</button>
+                <button id="confirm_order" class="button button-small button-rounded button-highlight">确认收货</button>
+            </p>
+            <p>总金额：&yen;<span id="total"></span></p>
+        </div>
+          </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- <div data-role="page" id="page_order_detail">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="header">
+    	<h1>订单详情</h1>
+        <a href="#" class="btn btn-toolbar btn-toolbar-left" data-rel="back"><span class="btn-inner">返回</span></a>
+    </div>
+    <div data-role="content" class="content pt0">
+    	<div class="simp-box order-detail hidden">
+        	<div class="con">
+            	<div class="simp-box-con order-li pt10">
+                	<div class="t"></div>
+                    <ul>
+                    </ul>
+                    <div class="buyer-info">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="con pt10 fs14 hidden order-total">
+            <p class="fr">
+                <button id="cancel_order" class="button button-small button-rounded button-highlight">取消订单</button>
+                <button id="delete_order" class="button button-small button-rounded button-highlight">删除订单</button>
+                <button id="confirm_order" class="button button-small button-rounded button-highlight">确认收货</button>
+            </p>
+        	<p>总金额：&yen;<span id="total"></span></p>
+        </div>
+    </div>
+
+</div> -->
+<script>
+	var orderArr = [
+		['已下单', 'new'],
+		['已付款', 'completed'],
+		['正在配送', 'shipping'],
+		['交易成功', 'completed'],
+		['交易关闭', 'canceled'],
+		['系统关闭', 'canceled']
+	],
+	orderNumber = '';
+</script>
+
+<script type="text/template" id="tmpl_orders">
+	{{ for(var i=0,l=it.length; i<l; i++ ){ }}
+	<li class="order-li" data-order="{{=it[i].order}}">
+		<div class="order-in">
+			<div class="t">
+				<div class="order-status {{=orderArr[it[i].state][1]}}">{{=orderArr[it[i].state][0]}}</div>
+				订单号: {{=it[i].order}}
+			</div>
+			<div class="c clearfix">
+				<div class="order-thumb"><a href="#page_order_detail?order={{=it[i].order}}" data-order-number="{{=it[i].order}}"><img src="{{=it[i].picture}}"></a></div>
+				<div class="order-info">
+					<a href="#page_order_detail?order={{=it[i].order}}" data-order-number="{{=it[i].order}}">{{=it[i].name}}</a>
+					<div class="order-sum">&yen;{{=it[i].total}}</div >
+					<div class="order-total">共{{=it[i].amount}}件</div >
+				</div>
+			</div>
+		</div>
+	</li>
+	{{ } }}
+</script>
+
+<script type="text/template" id="tmpl_order">
+	{{ for(var i=0,l=it.length; i<l; i++ ){ }}
+	<li class="clearfix">
+		<div class="item-thumb">
+			<img src="{{=it[i].picture}}">
+		</div>
+		<div class="item-info">
+			<p class="item-name">{{=it[i].name}}</p>
+			<p class="price"><span>x{{=it[i].amount}}</span>&yen;{{=it[i].price}}</p>
+		</div>
+	</li>
+	{{ } }}
+</script>
+
+<script type="text/template" id="tmpl_t">
+	<div class="order-status {{=orderArr[it.state][1]}}">{{=orderArr[it.state][0]}}</div>订单号: {{=orderNumber}}
+</script>
+
+<!-- <script src="assets/js/orders.js"></script> -->
+</body>
+</html>
